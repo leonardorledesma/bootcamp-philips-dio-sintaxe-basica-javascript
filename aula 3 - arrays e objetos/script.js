@@ -27,3 +27,32 @@ console.log(array_2);
 array_2.unshift('novo item no inicio');
 console.log(array_2);
 
+// indexOf - mostra o indice de um elemento.
+console.log(array_2.indexOf(true));
+
+// splice - remove ou substitui um indice pelo numero
+array_2.splice(0, 3);
+console.log(array_2);
+
+// slice - retorna uma parte existente do array
+let novo_array = array_2.slice(0, 3);
+console.log(novo_array);
+
+// object
+let object = {string: "string", number: 1, boolean: true, array22:["array"], objectInterno:{objectInterno:'objecto interno'} };
+console.log(object);
+console.log(object.boolean);
+console.log(object.objectInterno);
+
+// desetruturação do object
+var string = object.string;
+console.log(string);
+
+var arrayInterno = object.array22;
+console.log(arrayInterno);
+
+//segunda forma de fazer a desestruturação
+
+var {string, boolean, objectInterno} = object;
+console.log(string, boolean, objectInterno);
+
